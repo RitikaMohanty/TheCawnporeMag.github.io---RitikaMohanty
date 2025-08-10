@@ -52,7 +52,7 @@ line-height: 1.6;
 .header1 {
 min-height: 26vh;
 width: 100%;
-background-color:#780000;
+background-color: #fdf0d5;
 background-position: center;
 background-size: cover;
 position: relative;
@@ -81,7 +81,7 @@ nav {
     border-bottom: 1px solid rgba(179, 177, 177, 0.2);
     position: fixed;
     top: 0;
-    height: 70px;
+    height: 9%;
     width: 100%;
     z-index: 999;
 }
@@ -101,7 +101,7 @@ nav {
 
 
 .text-box1 {
-color: #fdf0d5;
+color: #780000;
 font-family:"Crimson Text", serif;
 width: 90%;
 position: absolute;
@@ -270,17 +270,17 @@ width: 80%;
 margin: auto;
 text-align: center;
 padding-top: 20px;
-background:  #fdf0d5;
-  
+background: linear-gradient(to bottom right, #fffdf7, #fff3e4);
+  border: 2px solid #ecd1b3;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.4s ease;
 }
 .Introductory:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
-#about1{
-  font-weight: bold;
-}
+
 #intro1 {
 color: #111717;
 font-size: 19px;
@@ -849,8 +849,99 @@ button:active {
   vertical-align: middle;
 }
 
-#word{
-  margin-top:5%;
-  font-size: 67px;
+/* Section Styling */
+.food-section {
+  background: #fffaf0;
+  border-radius: 20px;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  font-family:"Crimson Text", serif;
+  
 }
 
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #8B0000;
+}
+
+/* Scroll Container */
+.food-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: auto;
+  padding-bottom: 10px;
+}
+
+.food-card {
+  background-color: #800000;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  flex: 0 0 calc(33.333% - 20px); /* 3 visible on desktop */
+  color: #FDF0D5;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.food-card h2{
+ padding: 5px 20px;
+     font-size: 1.5rem;
+    color:whitesmoke;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+    font-weight: bold;
+}
+.food-card p{
+ padding: 0px;
+    color:whitesmoke;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+}
+
+.food-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Hover Animation */
+.food-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* Scrollbar Styling */
+.food-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.food-scroll::-webkit-scrollbar-track {
+  background: #ffe4cc;
+  border-radius: 10px;
+}
+
+.food-scroll::-webkit-scrollbar-thumb {
+  background: #cd5c5c;
+  border-radius: 10px;
+}
+
+.food-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a94442;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .food-card {
+    flex: 0 0 100%; /* 1 card visible */
+  }
+}
