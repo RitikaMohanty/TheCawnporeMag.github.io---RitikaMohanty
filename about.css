@@ -820,8 +820,87 @@ button:active {
 
 .navbar-logo {
   height: 40px;
-  margin-right: 16px
+  margin-right: 16px;
   vertical-align: middle;
 }
+.section-separator {
+  margin: 48px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.separator-line {
+  width: 40%;
+  height: 2px;
+  background: #780000;
+  margin: 8px 0;
+}
+.separator-label {
+  font-size: 1.5rem;
+  color: #780000;
+}
 
+/* Heading Style */
+.landmark-heading-outside {
+  color: #780000;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: serif;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+.landmark-heading-outside a {
+  color: #780000 !important;
+  text-decoration: underline;
+}
 
+/* Red Box Style */
+.red-card {
+  background: #780000;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #cdb2ad33;
+  padding: 32px 20px 24px 20px;
+  max-width: 550px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  color: #fdf0d5;
+  border: 2px solid #a52a2a;
+  display: block;
+  word-wrap: break-word;
+}
+
+/* Image Inside Red Box */
+.landmark-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 18px auto;
+  border: 3px solid #fdf0d5;
+  display: block;
+}
+
+/* Text Inside Red Box */
+.red-card .Tag-line {
+  color: #fdf0d5;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .red-card {
+    padding: 18px 6px 16px 6px;
+    max-width: 98vw;
+  }
+  .landmark-img {
+    width: 80px;
+    height: 80px;
+  }
+}
