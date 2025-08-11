@@ -25,6 +25,11 @@ html {
   z-index: 99999999;
   transition: transform 0.1s ease-out;
 }
+ @media (max-width: 600px) {
+  .circle {
+    display: none !important;
+  }
+}
 .progress-container {
   width: 100%;
   height: 4px;
@@ -49,29 +54,45 @@ html {
   position: relative;
   padding: 20px 0;
 }
-
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 5%;
-  margin-right: 6px;
-  background: linear-gradient(
-    135deg,
-    rgba(242, 237, 237, 0.3),
-    /* soft highlight */ rgba(122, 0, 0, 0.8),
-    /* your base color */ rgba(17, 16, 16, 0.3) /* subtle depth */
-  );
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(179, 177, 177, 0.2);
-  position: fixed;
-  top: 0;
-  height: 9%;
-  width: 100%;
-  z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 5%;
+    margin-right: 6px;
+    background: linear-gradient(135deg,
+        rgb(99, 0, 0),
+        rgba(218, 67, 67, 0.665),
+        rgb(71, 22, 22),
+        rgba(17, 16, 16, 0.3)
+
+    );
+    background-size: 400% 400%; /* make the gradient larger to animate */
+    animation: gradientMove 5s linear infinite;
+
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(179, 177, 177, 0.2);
+    position: fixed;
+    top: 0;
+    height:70px;
+    width: 100%;
+    z-index: 999;
 }
+
+/* Animation Keyframes */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .header1 {
   min-height: 36vh;
@@ -388,10 +409,34 @@ nav .fa {
   border-radius: 15px;
   padding: 1.5rem;
   color: #780000;
-  /* font-family: 'Crimson Text', serif; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* NEW: make card a flex container */
+  display: flex;
+  flex-direction: column;
 }
+
+.team-card .team-card-social-link-wrapper {
+  margin-top: auto; /* Push this to bottom */
+  padding: 5px;
+}
+
+.insta-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #fdf0d5;
+  background-color: #780000;
+  padding: 8px 14px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.insta-link:hover {
+  background-color: #a30000;
+}
+
 
 .team-card:hover {
   background: linear-gradient(to bottom, #bcaf87, #fdf0d5, #cdb2ad);
@@ -413,21 +458,6 @@ nav .fa {
 .team-card .intro {
   font-size: 15px;
   line-height: 1.6;
-}
-
-.insta-link {
-  display: inline-block;
-  margin-top: 1rem;
-  text-decoration: none;
-  color: #fdf0d5;
-  background-color: #780000;
-  padding: 8px 14px;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-}
-
-.insta-link:hover {
-  background-color: #a30000;
 }
 
 /* .mh10{
@@ -715,7 +745,7 @@ button:active {
 
 .navbar-logo {
   height: 40px;
-  margin-right: 16px
+  margin-right: 16px;
   vertical-align: middle;
 }
 

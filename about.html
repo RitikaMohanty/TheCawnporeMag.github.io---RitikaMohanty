@@ -13,6 +13,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+     <!-- Back Button (Fixed Top-Left Corner) -->
+    <button
+      onclick="history.back()"
+      style="
+        position: fixed;
+        top: 70px;
+        left: 20px;
+        z-index: 1000;
+        background-color: #800000;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      "
+    >
+      ← Back
+    </button>
 </head>
 <body>
                          <!-- Circles -->
@@ -333,34 +354,26 @@
     <div class="separator-label">◉</div>
     <div class="separator-line"></div>
   </div>
-
-<!-- Food Section Starts from here -->
-    
-     <h2 id="CardsHeading">Cawnpore's Famous Food </h2>
-    <section class="landmarks">
-        
-        <!-- food cards -->
-        <!-- Imarti -->
-        <div class="landmarkCard">
-            <img src="Imarti.jpeg" alt="Lal Imli" />
-            <div class="landmarkInfo">
-              <p class="Tag-line" style="color: #FDF0D5;">
-  Famous golden dessert of Kanpur known for it's crispiness and sweetness.
-</p>
-                <h2>Imarti</h2>
-            </div>
+<section id="famous-food" class="food-section">
+    <h2 class="section-title">Cawnpore's Famous Food</h2>
+    <div class="food-scroll">
+        <div class="food-card">
+            <img src="Imarti.jpeg" alt="Food 1">
+            <p>Famous golden dessert of Kanpur known for it's crispiness and sweetness.</p>
+            <h2>Imarti</h2>
         </div>
-        <!-- Sultani Dal -->
-        <div class="landmarkCard">
-            <img src="Sultani Dal.jpeg" alt="Sultani Dal" />
-            <div class="landmarkInfo">
-              <p class="Tag-line" style="color: #FDF0D5;">
-  A royal Dal made with tur dal cooked with milk,cream and yogurt with some tadka on top.
-</p>
+        <div class="food-card">
+            <img src="Sultani Dal.jpeg" alt="Food 2">
+            <p>A royal Dal made with tur dal cooked with milk,cream and yogurt with some tadka on top.</p>
+              <h2>Sultani Dal</h2>
+          </div>
+        <div class="food-card">
+            <img src="Luchi Sabji.jpeg" alt="Food 3">
+            <p>It's a breakfast dish made by deep frying the bread and bolied potato.</p>
+            <h2>Luchi Sabji</h2>
 
-                <h2>Sultani Dal</h2>
-            </div>
         </div>
+<<<<<<< HEAD
         <!-- Luchi Sabji -->
         <div class="landmarkCard">
             <img src="Luchi Sabji.jpeg" alt="Luchi Sabji" />
@@ -406,6 +419,16 @@
     </p>
   </div>
 </div>
+=======
+        <div class="food-card">
+            <img src="Makhan Malai.jpeg" alt="Food 4">
+            <p>This food is quite famous in Kanpur during winter seasons.</p>
+            <h2>Makhan Malai</h2>
+        </div>
+      
+    </div>
+</section>
+>>>>>>> b1104421b02f097d4aadef803430718bafc382f7
 
 <div class="section-separator">
   <div class="separator-line"></div>
