@@ -945,6 +945,9 @@ button:active {
   font-size: 28px;
   margin-bottom: 10px;
   color: #8B0000;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
 }
 
 /* Scroll Container */
@@ -1026,6 +1029,11 @@ button:active {
     flex: 0 0 100%; /* 1 card visible */
 
   }
+}
+ }
+ #famous-food {
+  display: block;
+  visibility: visible;
 }
 
 
