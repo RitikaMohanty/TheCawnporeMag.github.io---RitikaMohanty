@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cawnpore Gallery</title>
+     <meta name="description" content="Explore our visual archive of historical photographs, maps, and documents related to Kanpur's rich heritage.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thecawnporemag.github.io/gallery.html">
+    <meta property="og:title" content="Historical Gallery - The Cawnpore Magazine | Visual Archive of Kanpur">
+    <meta property="og:description" content="Explore our visual archive of historical photographs, maps, and documents related to Kanpur's rich heritage.">
+    <meta property="og:image" content="https://thecawnporemag.github.io/assets/images/gallery-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thecawnporemag.github.io/gallery.html">
+    <meta property="twitter:title" content="Historical Gallery - The Cawnpore Magazine | Visual Archive of Kanpur">
+    <meta property="twitter:description" content="Explore our visual archive of historical photographs, maps, and documents related to Kanpur's rich heritage.">
+    <meta property="twitter:image" content="https://thecawnporemag.github.io/assets/images/gallery-og.jpg">
     <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,7 +27,9 @@
   <body>
     <nav role="navigation" aria-label="Main Menu">
       <!-- Logo on the left -->
-      <img src="assets/favicon.ico" alt="Logo" class="navbar-logo" />
+      <a href="index.html">
+        <img src="assets/favicon.ico" alt="Logo" class="navbar-logo" />
+      </a>
 
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -126,10 +143,14 @@
           <i class="fa-solid fa-chevron-up"></i>
       </a>
       <div class="footer-top">
-        <div class="footer-about">
+      <div class="footer-about">
+        <a href="index.html">
+          <img src="assets/favicon.ico" alt="The Cawnpore Logo" style="height: 50px; margin-bottom: 10px;">
           <h3>The Cawnpore</h3>
-          <p>An independent magazine celebrating literary voices and untold stories.</p>
-        </div>
+        </a>
+        
+        <p>An independent magazine celebrating literary voices and untold stories.</p>
+      </div>
         <div class="footer-links" id="footerLinks">
           <h3>Quick Links</h3>
           <ul>
