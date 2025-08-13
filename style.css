@@ -976,11 +976,8 @@ button:active{
 .navbar-logo {
   height: 40px;
   margin-right: 16px;
-<<<<<<< HEAD
  vertical-align: middle;
-=======
   vertical-align: middle;
->>>>>>> b1104421b02f097d4aadef803430718bafc382f7
 }
 
 
@@ -1067,8 +1064,6 @@ button:active{
         font-size:0.9rem;
     }
 }
-<<<<<<< HEAD
-=======
 
 
 @media (min-width: 700px) and (max-width: 1000px) {
@@ -1121,4 +1116,5 @@ button:active{
   }
 }
 
->>>>>>> b1104421b02f097d4aadef803430718bafc382f7
+
+
