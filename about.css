@@ -601,3 +601,10 @@ button:active {
     color: #fdd5d5;
     font-size: 15px;
 }
+/* Fix for bullet points in quick links */
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
